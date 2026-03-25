@@ -5,10 +5,11 @@ class Result {
         int z = 0;
         int size_arr = arr.size();
         for(int i = 0; i< size_arr; i++){
-            if(arr.get(i)>0){
+            int val = arr.get(i);
+            if(val>0){
                 p++;
             }
-            else if(arr.get(i)<0){
+            else if(val<0){
                 n++;
             }
             else{
