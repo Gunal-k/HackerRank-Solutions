@@ -1,7 +1,7 @@
 def getTotalX(a, b):
     count = 0
     first = max(a)
-    second = max(b)
+    second = min(b)
     for i in range(first,second+1):
         div = True
         for num in a:
