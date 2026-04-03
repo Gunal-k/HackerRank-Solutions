@@ -3,8 +3,8 @@ def countingValleys(steps, path):
     for val in path:
         if val == 'U':
             count+=1
-        elif val == 'D':
             if count == 0:
                 valley+=1
+        else:
             count-=1
     return valley

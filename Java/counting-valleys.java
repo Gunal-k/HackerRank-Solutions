@@ -3,10 +3,12 @@ class Result {
         int count = 0, valley = 0;
         char[] arr = path.toCharArray();
         for(int i = 0; i<steps;i++){
-            if(arr[i] == 'U') count++;
-            else if(arr[i] == 'D'){
+            if(arr[i] == 'U'){
+                count++;
                 if(count == 0) valley++;
-                count--;   
+            }
+            else {
+                count--;
             }
         }
         return valley;
