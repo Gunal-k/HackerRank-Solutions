@@ -7,6 +7,6 @@ class Result {
             p -= d;
             if (p < m) p = m;
         }
-        return count;
+        return --count;
     }
 }
